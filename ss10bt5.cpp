@@ -13,7 +13,6 @@ void sort(int a[], int n) {
         a[m] = t;
     }
 }
-
 int search(int a[], int n, int x) {
     int l = 0, r = n - 1;
     while (l <= r) {
@@ -24,18 +23,9 @@ int search(int a[], int n, int x) {
     }
     return -1;
 }
-
 int main() {
-    int n;
-    printf("Nhap n: ");
-    scanf("%d", &n);
-
-    int a[n];
-    printf("Nhap mang:\n");
-    for (int i = 0; i < n; i++) {
-        printf("nhap phan tu %d: ", i);
-        scanf("%d", &a[i]);
-    }
+    int a[] = {12, 6, 4, 3, 11, 5, 7, 1, 9, 2};
+    int n = sizeof(a) / sizeof(a[0]);
     sort(a, n);
     printf("Mang sap xep: ");
     for (int i = 0; i < n; i++) {
